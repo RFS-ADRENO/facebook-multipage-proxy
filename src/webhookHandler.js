@@ -5,7 +5,8 @@ export default function webhookHandler(webhookByID) {
         const form = {
             entry: [{
                 messaging: messaging
-            }]
+            }],
+            object: "page"
         }
 
         const targetID = messaging[0].recipient?.id;
